@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+:root {
+    --color1: #c5a880;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* ===== Header ====== */
+.header {
+    margin-bottom: -10%;
+    position: fixed;
+    z-index: 1111111111111;
+    position: relative;
+    background-color: black;
+}
+
+.header__container {
+    padding: 1px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.header__container .nav__menu,
+.header__container .nav__toggle {
+    display: none;
+}
+
+.header__branch {
+    padding: 10px 0;
+}
+
+.header__branch span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header__branch small {
+    color: #fff;
+}
+
+.header__nav .nav__container  {
+    
+}
+
+.show-menu {
+    top: 8rem;
+}
+
+
+.header__nav .nav__container .nav__body {
+    display: flex;
+
+}
+
+.header__nav .nav__container .nav__body a{
+    padding: 15px 20px;
+    /* font-weight: bold; */
+    color: #fff;
+}
+
+.header__nav .nav__container .nav__body a:hover  {
+    border-bottom: 2px solid #ccc;
+}
+
+
+/*  sliders */
+
+/* ==== slider-home===== */
+.slider__container {
+    position: relative;
+}
+
+.overlay {
+    opacity: 0.5;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(19, 17, 17, 0.829);
+    position: absolute;
+    height: 100vh;
+}
+
+
+.home__img {
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+}
+
+.home__title {
+    position: absolute;
+    display: inline-block;
+    z-index: 111111;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.home_postRoom  a{
+    display: block;
+    right: 0;
+    top: 0;
+    color: #fff;
+    transform: translate(670px,-50px);
+}
+
+.home__title .title__desc span{
+    display: block;
+    font-size: 45px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.home__title .title__desc h2 {
+    font-size: 70px;
+    display: inline-block;
+    color: #fff;
+    word-spacing: 4;
+    /* margin-bottom: 20px; */
+}
+
+.form_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.form_container .location{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px 0 0 20px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.form_container input{
+    width: 525px;
+    border: none;
+}
+
+.form_container input::placeholder {
+    font-size: 20px;
+}
+
+.form_container button {
+    width: 25px;
+    border-radius: 0 20px 20px 0;
+}
+
+.form_container button box-icon {
+    font-size: 20px;
+}
+
+/* -------- Xu Huong ---------- */
+.XuHuong_container {
+    position: relative;
+}
+
+.xuhuong_group {
+    margin-top: 50px;
+    padding: 0 30px;
+}
+
+.title span {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.xuhuong_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    text-align: center;
+}
+
+.item:hover {
+    opacity: 0.8;
+}
+
+.item_name img {
+    width: 175px;
+    height: 125px;
+    display: block;
+    padding: 5px;
+    position: relative;
+    margin: 0 5px;
+    border-radius: 20px;
+    object-fit: cover;
+    background-position: center center;
+}
+
+.item_name span {
+    position: absolute;
+    transform: translate(-40px,-35px);
+    color: white;
+    font-weight: bold;
+}
+
+
+/* ----------- list Room --------- */
+.listRoom_container {
+    position: relative;
+    padding: 3rem 50px;
+    display: flex;
+    background-color: #f6f5f2;
+}
+
+.btn_seeAll span {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: #7180f8;
+}
+
+.btn_seeAll span:hover {
+    cursor: pointer;
+}
+/* left */
+.left_container {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+
+.left_title {
+    display: block;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.listRoom_left {
+    width: 70%;
+}
+
+.left_room {
+    display: flex;
+    padding: 10px;
+    border: 2px solid rgba(133, 128, 128, 0.274);
+    border-radius: 10px;
+}
+
+.left_room .room_image img {
+    display: block;
+    width: 216px;
+    height: 150px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left_room .room_desc {
+    padding: 2px 10px 2px 10px;
+}
+
+.left_room .desc_title {
+    font-size: 25px;
+}
+
+.left_room .desc_details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_room .gender {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_room .location {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.left_room .price {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #f73486;
+    transform: translateX(100px);
+}
+
+.left_room .price h3 {
+    font-size: 40px;
+}
+
+/* right */
+.listRoom_right {
+    width: 30%;
+}
+
+.right_container {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-right: 30px;
+    align-items: center;
+    width: 400px;
+}
+
+.right_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.right_title .btn_title {
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #83c9fd;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+
+.right_title .btn_title:hover {
+    cursor: pointer;
+}
+
+.right_room {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid rgba(133, 128, 128, 0.274);
+    border-radius: 10px;
+    margin:  0 auto;
+}
+
+.right_room .room_image img {
+    display: block;
+    height: 152px;
+    width: 310px;
+    border-radius: 10px;
+}
+
+.right_room .room_desc .desc_title {
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    width: 330px;
+}
+
+.right_room .room_desc .desc_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right_room .room_desc .desc_price span {
+    color: #f73486;
+    font-size: 19px;
+}
+
+/* -------- footer -------- */
+.footer {
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 15px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: black}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
